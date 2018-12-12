@@ -10,10 +10,16 @@ footer {
     background-color: black;
 }
 
+h1 {
+    margin-left: 10%;
+}
+
 section {
     margin: 5px;
     padding: 10px;
     background-color: lightgrey;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 article {
@@ -24,6 +30,7 @@ article {
 
 nav ul {
     padding: 0;
+    margin-left: 10%;
 }
 
 nav ul li {
