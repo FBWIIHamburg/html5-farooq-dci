@@ -5,39 +5,51 @@ body {
 
 header,
 footer {
-    display: flex;
     padding: 10px;
     color: white;
     background-color: black;
-    padding-left: 12.5%;
-    padding-right: 8%;
-    flex: 1
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 section {
-    margin: 5px;
-    padding: 10px;
+    margin: 0px;
+    padding: 60px;
     background-color: lightgrey;
-    padding-left: 12.5%;
-    padding-right: 12.5%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 500px;
 }
 
 article {
+    width: 30%;
+    height: 100px;
     margin: 5px;
     padding: 10px;
-    background-color: white;
+    background-color: darkorange;
+    float: left;
+    display: inline-block;
 }
 
 nav {
-    padding-left: 70%;
-    padding-top: 10px
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 nav ul {
     padding: 0;
+    list-style: none;
 }
 
 nav ul li {
-    display: inline;
     margin: 5px;
+    color: white;
+    font-size: 20px;
+    display: inline;
 }
