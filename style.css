@@ -41,7 +41,6 @@ article {
 
 nav ul {
     padding-left: 10%;
-    display: inline-flex;
     align-content: flex-end;
 }
 
@@ -51,28 +50,38 @@ nav ul li {
     list-style-type: none;
 }
 
-
-}
-@media screen and (max-width: 765px) {
-    nav {
-        width: 100%;
+@media only screen and (max-width:900x) {
+    nav ul li {
+        display: block;
     }
-    
-    section>div {
-        width: 100%;
-    }
-}
-@media screen and (max-width: 900px) {
-    nav>ul,
     header {
-        width: 100%;
-        display: flex;
         flex-direction: column;
         text-align: center;
     }
-    
     section>div {
         width: 50%;
-        display: flex;
+    }
+    section {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0px;
+    }
+}
+
+@media only screen and (max-width:765px) {
+    nav ul li {
+        display: block;
+    }
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+    section>div {
+        width: 100%;
+    }
+    section {
+        padding-left: 0px;
+        padding-right: 0px;
+        margin: 0px;
     }
 }
